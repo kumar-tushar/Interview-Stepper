@@ -1,1 +1,1 @@
-### Interview Stepper Developed with React & Material-UI
+### Interview Stepper Web App Developed with React & Material-UI
