@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
+import {Grid} from "@material-ui/core";
 
 const card = (
     <React.Fragment>
@@ -39,8 +40,10 @@ const card = (
 
 export default function CodingTest() {
   return (
-    <Box sx={{ width: "30%" }}>
-      <Card variant="outlined" style={{ height: "auto" }}>{card}</Card>
-    </Box>
-  );
+      <Grid container justifyContent="center">
+        <Box sx={{width: "30%"}} >
+          <Card variant="outlined" style={{ height: "300px" }}>{card}</Card>
+        </Box>
+      </Grid>
+  )
 }

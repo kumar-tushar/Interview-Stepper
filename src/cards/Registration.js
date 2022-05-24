@@ -5,10 +5,11 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import {Grid} from "@material-ui/core";
 
 const card = (
     <React.Fragment>
-        <CardContent>
+        <CardContent style={{marginTop:"76px"}} >
             <Typography variant="h5" component="div" style={{ justifyContent: "center", display: "flex" }}>
                 Register for the Job
             </Typography>
@@ -23,8 +24,10 @@ const card = (
 
 export default function Registration() {
   return (
-    <Box sx={{ width: "20%" }}>
-      <Card variant="outlined" style={{ height: "auto" }}>{card}</Card>
-    </Box>
+      <Grid container justifyContent="center" >
+          <Box sx={{width: "30%"}} >
+              <Card variant="outlined" style={{ height: "300px" }}>{card}</Card>
+          </Box>
+      </Grid>
   )
 }

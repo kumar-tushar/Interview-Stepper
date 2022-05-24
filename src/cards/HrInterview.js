@@ -3,10 +3,11 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import {Grid} from "@material-ui/core";
 
 const card = (
     <React.Fragment>
-        <CardContent>
+        <CardContent style={{marginTop:"52px"}}>
             <Typography variant="h5" component="div" style={{ justifyContent: "center", display: "flex" }}>
                 HR Interview
             </Typography>
@@ -28,9 +29,10 @@ const card = (
 
 export default function HrInterview() {
     return (
-        <Box sx={{ width: "30%" }}>
-            <Card variant="outlined" style={{ height: "auto" }}>{card}</Card>
-        </Box>
-    );
+        <Grid container justifyContent="center">
+            <Box sx={{width: "30%"}} >
+                <Card variant="outlined" style={{ height: "300px" }}>{card}</Card>
+            </Box>
+        </Grid>
+    )
 }
-;
