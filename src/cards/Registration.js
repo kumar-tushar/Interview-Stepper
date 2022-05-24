@@ -14,7 +14,12 @@ const card = (
       </Typography>
     </CardContent>
     <CardActions style={{ justifyContent: "center", display: "flex" }}>
-      <Button size="small">Register Now</Button>
+      <Button
+        size="small"
+        style={{ backgroundColor: "lightblue", color: "blue" }}
+      >
+        Register Now
+      </Button>
     </CardActions>
   </React.Fragment>
 );

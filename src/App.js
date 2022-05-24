@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Registration from "./cards/Registration";
 import PhoneInterview from "./cards/PhoneInterview";
 import CodingTest from "./cards/CodingTest";
-import CodingInterview from "./cards/CodingInterview";
+import TechnicalInterview from "./cards/TechnicalInterview";
 import HrInterview from "./cards/HrInterview";
 import Hired from "./cards/Hired";
 
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Registration', 'Phone Interview', 'Coding Test', 'Coding Interview', "HR Interview", "Hired"];
+  return ['Registration', 'Phone Interview', 'Coding Test', 'Technical Interview', "HR Interview", "Hired"];
 }
 
 function getStepContent(stepIndex) {
@@ -38,7 +38,7 @@ function getStepContent(stepIndex) {
     case 2:
       return <CodingTest/>;
     case 3:
-      return <CodingInterview/>;
+      return <TechnicalInterview/>;
     case 4:
       return <HrInterview/>;
     case 5:
