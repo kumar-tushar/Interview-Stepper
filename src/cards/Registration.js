@@ -7,29 +7,24 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 const card = (
-  <React.Fragment>
-    <CardContent style={{ justifyContent: "center", display: "flex" }}>
-      <Typography variant="h5" component="div">
-        Register for the Job
-      </Typography>
-    </CardContent>
-    <CardActions style={{ justifyContent: "center", display: "flex" }}>
-      <Button
-        size="small"
-        style={{ backgroundColor: "lightblue", color: "blue" }}
-      >
-        Register Now
-      </Button>
-    </CardActions>
-  </React.Fragment>
+    <React.Fragment>
+        <CardContent>
+            <Typography variant="h5" component="div" style={{ justifyContent: "center", display: "flex" }}>
+                Register for the Job
+            </Typography>
+        </CardContent>
+        <CardActions style={{ justifyContent: "center", display: "flex" }}>
+            <Button size="small" style={{ backgroundColor: "lightblue", color: "blue" }}>
+                Register Now
+            </Button>
+        </CardActions>
+    </React.Fragment>
 );
 
 export default function Registration() {
   return (
     <Box sx={{ width: "20%" }}>
-      <Card variant="outlined" style={{ height: "auto" }}>
-        {card}
-      </Card>
+      <Card variant="outlined" style={{ height: "auto" }}>{card}</Card>
     </Box>
-  );
+  )
 }
